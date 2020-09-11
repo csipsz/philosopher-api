@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  content: MyText
+  philosopher: one
+  branch: one
+
+two:
+  content: MyText
+  philosopher: two
+  branch: two
