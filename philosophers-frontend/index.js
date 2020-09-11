@@ -1,8 +1,6 @@
-document.addEventListener("click", function(){
-    alert("hi")
-})
 
 let branchDiv = () => document.querySelector("#branches")
+let dropDown = () => document.querySelector("#philosopher-dropdown")
 
 function loadBranches(){
     fetch("http://localhost:3000/branches")
@@ -23,6 +21,9 @@ function displayBranches(branches){
             const li = document.createElement('li')
             li.textContent = philosopher.name 
             list.appendChild(li)
+            const opt = document.createElement('option')
+            opt.innerText = philosopher.name 
+            dropDown().appendChild(opt)
         })
         branchDiv().appendChild(h2)
         branchDiv().appendChild(p)
